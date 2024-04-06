@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #4b6cb7, #182848);
+}
+
+.calc-body {
+  width: 275px;
+  min-height: 400px;
+  box-shadow: 0 8px 50px -7px black;
+  background: #3A4655;
+  border-radius: 10px;
+}
+
+.calc-screen {
+  padding: 1rem;
+}
+
+#display {
+  font-size: 2rem;
+  text-align: right;
+  color: #fff;
+  background-color: #3A4655;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.calc-button-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.calc-button-row button {
+  background: #425062;
+  color: #fff;
+  height: 65px;
+  font-size: 1.3rem;
+  border: none;
+}
+
+.calc-button-row button.operator {
+  background: #425062; /* Background color for operator buttons */
+}
+
+.calc-button-row button.operator:hover {
+  background: #3e4b5c; /* Darker background on hover */
+}
+
+.calc-button-row button.ac {
+  color: #ff7665;
+}
+
+.calc-button-row button.ac:hover {
+  background: #3e4b5c; /* Darker background on hover */
+}
+
+.calc-button-row button,
+.calc-button-row button.ac,
+.calc-button-row button.operator {
+  border: 1px solid #3C4857; /* Border color for all buttons */
+}
+
+.calc-button-row button:nth-child(4n),
+.calc-button-row button:nth-child(4n-1),
+.calc-button-row button:nth-child(4n-2),
+.calc-button-row button:nth-child(4n-3) {
+  border: none; /* Remove border from number buttons */
+}
+
+.calc-button-row button:hover {
+  background: #3e4b5c; /* Darker background on hover */
+}
+
+#result {
+  font-size: 1.5rem;
+  text-align: right;
+  color: #fff;
+  background-color: #3A4655;
+  border: none;
+  width: 100%;
+  outline: none;
+  margin-top: 5px;
+}
